@@ -37,7 +37,7 @@ barplot(stepsperday$steps, names.arg=format.Date(stepsperday$date,"%b %d"), las=
 
 ![plot of chunk unnamed-chunk-2](./PA1_template_files/figure-html/unnamed-chunk-2.png) 
 
-#### Mean total number of steps taken per day
+#### Mean total number of steps taken each day
 
 ```r
 #computing mean
@@ -48,7 +48,7 @@ mean(stepsperday$steps, na.rm=TRUE)
 ## [1] 10766
 ```
 
-#### Median total number of steps taken per day
+#### Median total number of steps taken each day
 
 ```r
 #computing median
@@ -124,7 +124,7 @@ barplot(NoNAtepsperday$steps, names.arg=format.Date(NoNAtepsperday$date,"%b %d")
 
 ![plot of chunk unnamed-chunk-9](./PA1_template_files/figure-html/unnamed-chunk-9.png) 
 
-#### Mean total number of steps taken per day with the missing data filled in.
+#### Mean total number of steps taken each day with the missing data filled in.
 
 ```r
 #computing mean
@@ -135,7 +135,7 @@ mean(NoNAtepsperday$steps)
 ## [1] 10766
 ```
 
-#### Median total number of steps taken per day with the missing data filled in.
+#### Median total number of steps taken each day with the missing data filled in.
 
 ```r
 #computing median

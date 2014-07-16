@@ -25,13 +25,13 @@ stepsperday <- dcast(meltstepsperday, date ~ variable, sum)
 barplot(stepsperday$steps, names.arg=format.Date(stepsperday$date,"%b %d"), las=2, ylab="Steps")
 ```
 
-#### Mean total number of steps taken per day
+#### Mean total number of steps taken each day
 ``` {r}
 #computing mean
 mean(stepsperday$steps, na.rm=TRUE)
 ```
 
-#### Median total number of steps taken per day
+#### Median total number of steps taken each day
 ``` {r}
 #computing median
 median(stepsperday$steps, na.rm=TRUE)
@@ -84,13 +84,13 @@ NoNAtepsperday <- aggregate(steps ~ date, NoNAData, sum)
 barplot(NoNAtepsperday$steps, names.arg=format.Date(NoNAtepsperday$date,"%b %d"), las=2, ylab="Steps")
 ```
 
-#### Mean total number of steps taken per day with the missing data filled in.
+#### Mean total number of steps taken each day with the missing data filled in.
 ``` {r}
 #computing mean
 mean(NoNAtepsperday$steps)
 ```
 
-#### Median total number of steps taken per day with the missing data filled in.
+#### Median total number of steps taken each day with the missing data filled in.
 ``` {r}
 #computing median
 median(NoNAtepsperday$steps)
